@@ -26,7 +26,7 @@
               <p class="text-center">Area(A) = 0.5 x b x h</p>
 
               <div>
-                <input
+                <input id="triangle-base"
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
                   placeholder="b"
@@ -36,10 +36,14 @@
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
                   name=""
-                  id=""
+                  id="triangle-height"
                   placeholder="h"
                 />
                 <span>cm</span>
+              </div>
+
+              <div>
+                <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
               </div>
 
               <div class="card-actions">
@@ -47,6 +51,29 @@
               </div>
             </div>
           </div>
+
+          <!--Rectangle Card-->
+
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img
+                src="images/rectangle.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rectangle!</h2>
+              <p class="text-center">Area (A) = w x l</p>
+              <div class="flex">
+                <input type="text" name="" id="" class="w-24 text-2xl p-2 rounded-sm" placeholder="l"><span class="mr-4 ml-2">cm</span>
+                <input type="text" name="" id="" class="w-24 text-2xl p-2 rounded-sm" placeholder="w"><span>cm</span>
+              </div>
+              <div class="card-actions justify-end">
+                <button onclick="calculaterectanglearea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+
+
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
               <img
@@ -99,5 +126,6 @@
       </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-area.js"></script>
   </body>
 </html>
